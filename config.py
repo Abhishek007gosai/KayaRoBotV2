@@ -6,13 +6,13 @@ load_dotenv()
 
 API_ID = 29245477
 API_HASH = "0abc83883262245c90ca337b7a0375c4"
-BOT_TOKEN = ""
+BOT_TOKEN = "8691693420:AAFh7uKq1WGnGuj6HFyexEtgdFz_kx1ruiw"
 
 SET_INTERVAL = int(os.environ.get("SET_INTERVAL", 60))  # in seconds, default 1 hour
 TARGET_CHAT_ID = os.environ.get("TARGET_CHAT_ID", "-1002512442401")
 MAIN_CHANNEL = os.environ.get("MAIN_CHANNEL", "-1003932217304") # Change as needed
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1003746574484")
-MONGO_URL = os.environ.get("MONGO_URL", "")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://kayaxrobot:yzSgHQLteJCTXUqK@cluster0.ltk8k8h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 MONGO_NAME = os.environ.get("MONGO_NAME", "cluster0")
 OWNER_ID = int(os.environ.get("OWNER_ID", "8667251104"))
 ADMIN_URL = os.environ.get("ADMIN_URL", "EternalsHelplineBot")
