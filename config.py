@@ -6,7 +6,7 @@ load_dotenv()
 
 API_ID = 29245477
 API_HASH = "0abc83883262245c90ca337b7a0375c4"
-BOT_TOKEN = ""
+BOT_TOKEN = "8691693420:AAFh7uKq1WGnGuj6HFyexEtgdFz_kx1ruiw"
 
 SET_INTERVAL = int(os.environ.get("SET_INTERVAL", 60))  # in seconds, default 1 hour
 TARGET_CHAT_ID = os.environ.get("TARGET_CHAT_ID", "-1002512442401")
