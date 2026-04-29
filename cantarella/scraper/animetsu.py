@@ -243,7 +243,7 @@ class AnimetsuScraper:
         # 3. Preparation
         def sanitize(name): return re.sub(r'[\\/*?:"<>|]', "", name)
         try: from config import FORMAT
-        except ImportError: FORMAT = "[S{season}-E{episode}] {title} [{quality}] [{audio}]"
+        except ImportError: FORMAT = "[S{season} E{episode}] {title} [{quality}] [{audio}]"
 
         if is_dub_only:
             audio_label = "ENG"
