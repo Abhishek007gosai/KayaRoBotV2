@@ -56,7 +56,7 @@ async def post_to_main_channel(client: Client, anime_url: str, uploaded_messages
     anime_season = season_override
     ep_no = batch_ep_range if batch_ep_range else ep_num_override
 
-    audio = "Dual Audio"
+    audio = "DUAL"
     if uploaded_messages:
         m = re.search(r'\[S(\d+)-E(\d+)\]', uploaded_messages[0].caption or "")
         if not m:
@@ -65,10 +65,10 @@ async def post_to_main_channel(client: Client, anime_url: str, uploaded_messages
             anime_season = m.group(1)
             if not batch_ep_range:
                 ep_no = m.group(2)
-        if "JP" in (uploaded_messages[0].caption or ""):
-            audio = "Japanese"
-        elif "EN" in (uploaded_messages[0].caption or ""):
-            audio = "English"
+        if "SUB" in (uploaded_messages[0].caption or ""):
+            audio = "SUB"
+        elif "ENG" in (uploaded_messages[0].caption or ""):
+            audio = "ENG"
 
     caption = CAPTION_FORMAT.format(
         title=title,
