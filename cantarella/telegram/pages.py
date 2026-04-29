@@ -66,9 +66,9 @@ async def post_to_main_channel(client: Client, anime_url: str, uploaded_messages
             if not batch_ep_range:
                 ep_no = m.group(2)
         if "SUB" in (uploaded_messages[0].caption or ""):
-            audio = "SUB"
+            audio = "ENG SUB"
         elif "ENG" in (uploaded_messages[0].caption or ""):
-            audio = "ENG"
+            audio = "ENG DUB"
 
     caption = CAPTION_FORMAT.format(
         title=title,
