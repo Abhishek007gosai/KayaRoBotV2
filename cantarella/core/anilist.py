@@ -33,12 +33,12 @@ except ImportError:
         # Very basic parsing
         return {"anime_title": name}
 
-CAPTION_FORMAT = """
-<blockquote><b>⬡ {title} {anime_season}</b></blockquote>
-<b>━━━━━━━━━━━━━━━━━━━━━━⋞</b>
-<blockquote>⟡ EPISODE - {ep_no}[{status}]
+CAPTION_FORMAT = """<b>
+<blockquote>⬡ {title}</blockquote>
+━━━━━━━━━━━━━━━━━━━━━━⋞
+<blockquote>⟡ EPISODE - {ep_no}
 ⟡ QUILITY - MULTI[{audio}]</blockquote>
-<b>★━━━━━━━━━━━━━━━━━━━━━⋞</b>"""
+★━━━━━━━━━━━━━━━━━━━━━⋞</b>"""
 
 GENRES_EMOJI = {
     "Action": "👊", "Adventure": "🪂", "Comedy": "🤣",
