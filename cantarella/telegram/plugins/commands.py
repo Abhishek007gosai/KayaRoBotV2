@@ -221,7 +221,7 @@ buttons.append([
 
 buttons.append([
     InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data="about"),
-    InlineKeyboardButton("Hᴇʟᴘ •", callback_data="help")
+    InlineKeyboardButton("ʜᴇʟᴘ •", callback_data="help")
 ])
 
 inline_buttons = InlineKeyboardMarkup(buttons)(buttons)
