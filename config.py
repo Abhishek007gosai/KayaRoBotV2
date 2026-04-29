@@ -10,7 +10,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 SET_INTERVAL = int(os.environ.get("SET_INTERVAL", 60))  # in seconds, default 1 hour
 TARGET_CHAT_ID = os.environ.get("TARGET_CHAT_ID", "-1002512442401")
-MAIN_CHANNEL = os.environ.get("MAIN_CHANNEL", "-1003932217304") # Change as needed
+MAIN_CHANNEL = os.environ.get("MAIN_CHANNEL", "-1003920814812") # Change as needed
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1003746574484")
 MONGO_URL = os.environ.get("MONGO_URL", "")
 MONGO_NAME = os.environ.get("MONGO_NAME", "cluster0")
