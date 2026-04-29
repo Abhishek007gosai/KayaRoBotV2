@@ -197,26 +197,26 @@ async def handle_start(client: Client, message):
         except Exception:
             pass
 
-    # Record user
-    await db.add_user(message.from_user.id)
+# Record user
+await db.add_user(message.from_user.id)
 
-    buttons = []
-    is_admin = await db.is_admin(message.from_user.id)
-    if is_admin or message.from_user.id == OWNER_ID:
-        buttons = []
+buttons = []
+is_admin = await db.is_admin(message.from_user.id)
 
-# Top row (solo button)
+# Top row
 buttons.append([
     InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/AnimeNexusNetwork/158")
 ])
 
-buttons.append([
-    InlineKeyboardButton("ᴀᴅᴍɪɴ ᴘᴀɴᴇʟ", callback_data="admin_panel"),
-    InlineKeyboardButton("ᴛᴏɢɢʟᴇ ᴏɴɢᴏɪɴɢ", callback_data="toggle_ongoing")
-])
+# Admin buttons only if admin
+if is_admin or message.from_user.id == OWNER_ID:
+    buttons.append([
+        InlineKeyboardButton("ᴀᴅᴍɪɴ ᴘᴀɴᴇʟ", callback_data="admin_panel"),
+        InlineKeyboardButton("ᴛᴏɢɢʟᴇ ᴏɴɢᴏɪɴɢ", callback_data="toggle_ongoing")
+    ])
 
 buttons.append([
-    InlineKeyboardButton("❤ ғᴀᴠᴏʀɪᴛᴇꜱ", callback_data="favorites")
+    InlineKeyboardButton("ғᴀᴠᴏʀɪᴛᴇꜱ", callback_data="favorites")
 ])
 
 buttons.append([
@@ -224,7 +224,8 @@ buttons.append([
     InlineKeyboardButton("ʜᴇʟᴘ •", callback_data="help")
 ])
 
-inline_buttons = InlineKeyboardMarkup(buttons)(buttons)
+# FIXED LINE
+inline_buttons = InlineKeyboardMarkup(buttons)
 
     try:
         await message.reply_photo(
