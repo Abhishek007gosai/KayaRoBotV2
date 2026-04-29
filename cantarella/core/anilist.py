@@ -34,20 +34,15 @@ except ImportError:
         return {"anime_title": name}
 
 CAPTION_FORMAT = """
-<blockquote><b>◆ {title} ◆</b></blockquote>
-<b>✦━━━━━━━━━━━━━━━━━━━━━━━━✦</b>
-<blockquote><i>➥ Sᴇᴀsᴏɴ:- {anime_season}
-➥ Eᴘɪsᴏᴅᴇ:- {ep_no}
-➥ Sᴛᴀᴛᴜs:- {status}
-➥ Gᴇɴʀᴇs:- {genres}
-➥ Aᴜᴅɪᴏ:- {audio}</i></blockquote>
-<b>✦━━━━━━━━━━━━━━━━━━━━━━━━✦</b>
-<b><i>⌬ Pᴏᴡᴇʀᴇᴅ ʙʏ:- @cantarellabots</i></b>
-"""
+<blockquote><b>⬡ {title} {anime_season}</b></blockquote>
+<b>━━━━━━━━━━━━━━━━━━━━━━⋞</b>
+<blockquote>⟡ EPISODE - {ep_no}[{status}]
+⟡ QUILITY - MULTI[{audio}]</blockquote>
+<b>★━━━━━━━━━━━━━━━━━━━━━⋞</b>"""
 
 GENRES_EMOJI = {
     "Action": "👊", "Adventure": "🪂", "Comedy": "🤣",
-    "Drama": "🎭", "Ecchi": "💋", "Fantasy": "🧞",
+    "Drama": "🎭", "Ecchi": "💋", "Fantas y": "🧞",
     "Hentai": "🔞", "Horror": "☠️", "Mahou Shoujo": "☯️", "Mecha": "🤖", "Mystery": "🔮",
     "Psychological": "♟️", "Romance": "💞", "Sci-Fi": "🛸", "Slice of Life": "☘️",
     "Sports": "⚽️", "Supernatural": "🫧", "Thriller": "🥶",
