@@ -246,11 +246,11 @@ class AnimetsuScraper:
         except ImportError: FORMAT = "[S{season}-E{episode}] {title} [{quality}] [{audio}]"
 
         if is_dub_only:
-            audio_label = "EN"
+            audio_label = "ENG"
         elif dub_data and dub_data.get('sources'):
-            audio_label = "Dual Audio"
+            audio_label = "DUAL"
         else:
-            audio_label = "JP"
+            audio_label = "SUB"
 
         base_filename = sanitize(FORMAT.format(
             season=season_override or "1",
