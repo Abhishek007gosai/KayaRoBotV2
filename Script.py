@@ -1,46 +1,40 @@
 class Dead:
-    START_MSG = """≡ <b>Sᴛᴀʀᴛ ᴍᴇɴᴜ</b>
+    START_MSG = """<b><blockquote>ʜᴇʏ {mention}メ!! ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ ʏᴏᴜ ᴄᴀɴ ᴅᴏ sᴏ ʙʏ sᴜʙsᴄʀɪʙɪɴɢ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ</blockquote>» ᴛʜᴀɴᴋs ғᴏʀ ʏᴏᴜʀ sᴜᴘᴘᴏʀᴛ</b>"""
 
-ʜᴇʏ {mention}, ᴡᴇʟᴄᴏᴍᴇ! 👋
+    HELP_TXT = """<b><blockquote>ʜᴇʟʟᴏ {mention}!! ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <a href=https://t.me/KafkaX_Bot?start=LTEwMDE0NTczMTMwMjg=>ᴇᴛᴇʀɴᴀʟs</a>
 
-<blockquote><b>I ᴀᴍ ʏᴏᴜʀ ᴜʟᴛɪᴍᴀᴛᴇ ᴀɴɪᴍᴇ ᴄᴏᴍᴘᴀɴɪᴏɴ ✨
+ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ/ɢʀᴏᴜᴘ ғɪʀsᴛ, ᴘʟᴇᴀsᴇ sᴜʙsᴄʀɪʙᴇ
+ʜᴇʟᴘʟɪɴᴇ @EternalsHelplineBot
 
-ɪ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ sᴄʀᴀᴘᴇ ᴀɴᴅ ʙʀɪɴɢ ʏᴏᴜ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴀɴɪᴍᴇ ᴇᴘɪsᴏᴅᴇs ғʀᴏᴍ AɴɪWᴀᴛᴄʜ ᴅɪʀᴇᴄᴛʟʏ ɪɴᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛs ᴡɪᴛʜ ʙʟᴀᴢɪɴɢ ғᴀsᴛ sᴘᴇᴇᴅ ⚡
+❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs
+├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ/ᴏᴘᴇɴ ʜᴏᴍᴇ ᴜɪ
 
-Fᴏʀɢᴇᴛ ᴛʜᴇ ʜᴀssʟᴇ ᴏғ sᴇᴀʀᴄʜɪɴɢ ᴏɴ ᴡᴇʙsɪᴛᴇs. Nᴏᴡ ᴇɴᴊᴏʏ sᴇᴀᴍʟᴇss ᴅᴏᴡɴʟᴏᴀᴅs ɪɴ ᴍᴜʟᴛɪᴘʟᴇ ǫᴜᴀʟɪᴛɪᴇs, ʙᴀᴛᴄʜ sᴇᴀsᴏɴ ᴜᴘʟᴏᴀᴅs, ᴀɴᴅ ʟɪɢʜᴛɴɪɴɢ ғᴀsᴛ ᴘʀᴏᴄᴇssɪɴɢ — ᴀʟʟ ᴀᴛ ᴏɴᴇ ᴘʟᴀᴄᴇ.
+sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!</blockquote></b>
+<b>ᴄᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs</b>
+<blockquote><b>/help</b> - ᴠɪᴇᴡ ᴛʜɪs ɢᴜɪᴅᴇ
+<b>/ongoing</b> - ᴛᴏᴅᴀʏ's ʀᴇʟᴇᴀsᴇ sᴄʜᴇᴅᴜʟᴇ
+<b>/schedule</b> - sᴀᴍᴇ ᴀs /ongoing
+<b>/autodel &lt;seconds&gt;</b> - ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ꜰɪʟᴇs ɪɴ ᴘᴍ
+<b>/manage</b> - ᴀᴅᴍɪɴ sᴇᴛᴛɪɴɢs ᴘᴀɴᴇʟ</blockquote>
+<b>ʜᴏᴡ ɪᴛ ᴡᴏʀᴋs</b>
+<blockquote>1. sᴇɴᴅ ᴀɴ ᴀɴɪᴍᴇ ɴᴀᴍᴇ.
+2. ᴄʜᴏᴏsᴇ ᴇᴘɪsᴏᴅᴇ ᴀɴᴅ ǫᴜᴀʟɪᴛʏ.
+3. ʀᴇᴄᴇɪᴠᴇ ꜰɪʟᴇ ɪɴ ᴄʜᴀᴛ.</blockquote>
 
-Yᴏᴜʀ ғᴀᴠᴏᴜʀɪᴛᴇ ᴀɴɪᴍᴇs ᴀʀᴇ ɴᴏᴡ ᴊᴜsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴀᴡᴀʏ.</b></blockquote>
+<b>ɴᴏᴛᴇ</b>
+<blockquote>ꜱᴏᴍᴇ ᴄᴏᴍᴍᴀɴᴅs ᴀʀᴇ ᴀᴅᴍɪɴ-ᴏɴʟʏ.</blockquote>"""
 
-Exᴘʟᴏʀᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!</b>"""
+    ABOUT_TXT = """<b><blockquote>≡ ᴀʙᴏᴜᴛ ᴍᴇɴᴜ
 
-    HELP_TXT = """≡ <b>Hᴇʟᴘ ᴍᴇɴᴜ</b>
+ʜᴇʀᴇ ɪs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄʀᴇᴀᴛᴏʀs ᴀɴᴅ sᴘᴇᴄs
 
-Hᴇʟʟᴏ {mention}, ʜᴇʀᴇ ᴀʀᴇ ᴍʏ ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ:
-
-<blockquote><b>✦ Aᴜᴛᴏ-Sᴄʀᴀᴘɪɴɢ › Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ғᴇᴛᴄʜᴇs ɴᴇᴡ ᴇᴘɪsᴏᴅᴇs ᴅɪʀᴇᴄᴛʟʏ ғʀᴏᴍ AɴɪWᴀᴛᴄʜ sᴏ ʏᴏᴜ ɴᴇᴠᴇʀ ᴍɪss ᴏᴜᴛ.
-✦ Mᴜʟᴛɪ-Qᴜᴀʟɪᴛʏ › Pʀᴏᴠɪᴅᴇs ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋs ɪɴ ᴍᴜʟᴛɪᴘʟᴇ ʀᴇsᴏʟᴜᴛɪᴏɴs ᴛᴏ ғɪᴛ ʏᴏᴜʀ ɴᴇᴛᴡᴏʀᴋ.
-✦ Bᴀᴛᴄʜ Uᴘʟᴏᴀᴅs › Cᴀᴘᴀʙʟᴇ ᴏғ ᴜᴘʟᴏᴀᴅɪɴɢ ᴡʜᴏʟᴇ sᴇᴀsᴏɴs sᴇᴀᴍʟᴇssʟʏ.
-✦ Fᴀsᴛ Sᴘᴇᴇᴅ › Uᴛɪʟɪᴢᴇs ʜɪɢʜ-sᴘᴇᴇᴅ sᴇʀᴠᴇʀs ғᴏʀ ʟɪɢʜᴛɴɪɴɢ-ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ᴜᴘʟᴏᴀᴅ ᴘʀᴏᴄᴇssɪɴɢ.
-✦ Eᴀsʏ Sᴇᴀʀᴄʜ › Sɪᴍᴘʟʏ ᴛʏᴘᴇ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴀɴʏ ᴀɴɪᴍᴇ ᴛᴏ ǫᴜɪᴄᴋʟʏ ғɪɴᴅ ᴇᴘɪsᴏᴅᴇs.
-✦ Rᴇʟɪᴀʙʟᴇ › 24/7 ᴜᴘᴛɪᴍᴇ ᴡɪᴛʜ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴇʀʀᴏʀ ʜᴀɴᴅʟɪɴɢ ᴛᴏ sᴇʀᴠᴇ ʏᴏᴜ ᴀɴʏᴛɪᴍᴇ.</b></blockquote>
-
-<b>⚙️ Hᴏᴡ ᴛᴏ Usᴇ:</b>
-<blockquote><b>✦ Sᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ʙʏ sᴇɴᴅɪɴɢ ɪᴛs ɴᴀᴍᴇ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
-✦ Sᴇʟᴇᴄᴛ ᴛʜᴇ ǫᴜᴀʟɪᴛʏ ʏᴏᴜ ᴡᴀɴᴛ ғʀᴏᴍ ᴛʜᴇ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴs.
-✦ Wᴀɪᴛ ғᴏʀ ᴛʜᴇ ʙᴏᴛ ᴛᴏ sᴄʀᴀᴘᴇ ᴀɴᴅ sᴇɴᴅ ᴛʜᴇ ғɪʟᴇ ᴅɪʀᴇᴄᴛʟʏ ᴛᴏ ʏᴏᴜ.</b></blockquote>"""
-
-    ABOUT_TXT = """≡ <b>Aʙᴏᴜᴛ ᴍᴇɴᴜ</b>
-
-Hᴇʀᴇ ɪs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄʀᴇᴀᴛᴏʀs ᴀɴᴅ sᴘᴇᴄs:
-
-<blockquote><b>
-✦ Cʀᴇᴀᴛᴏʀ › <a href='https://t.me/cantarellabots'>CᴀɴᴛᴀʀᴇʟʟᴀBᴏᴛs</a>
-✦ Fᴏᴜɴᴅᴇʀ › <a href='https://t.me/cantarellabots'>CᴀɴᴛᴀʀᴇʟʟᴀBᴏᴛs</a>
-✦ Dᴇᴠᴇʟᴏᴘᴇʀ › <a href='https://t.me/about_zani/117'>ZANI</a>
-✦ Dᴀᴛᴀʙᴀsᴇ › <a href='https://www.mongodb.com/docs/'>MᴏɴɢᴏDB</a>
-✦ Lɪʙʀᴀʀʏ › Kᴜʀɪɢʀᴀᴍ
-✦ Eɴɢɪɴᴇ › FFᴍᴘᴇɢ
-</b></blockquote>"""
+◈ sᴜᴘʀᴇᴀᴍ : <a href='https://t.me/AnimeNexusNetwork'>ɴᴇᴛᴡᴏʀᴋ</a>
+◈ ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/EternalsHelplineBot'>ᴀɴᴏɴʏᴍᴏᴜs</a>
+◈ ᴅᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/docs/'>MᴏɴɢᴏDB</a>
+◈ ᴏɴɢᴏɪɴɢ : <a href='https://t.me/Anime_Ongoing_Airing'>ᴏɴɢᴏɪɴɢ ᴀɪʀɪɴɢꜱ</a>
+◈ ᴇᴄᴄʜɪ : <a href='https://t.me/Ecchi_Dex'>ᴇᴄᴄʜɪ ᴅᴇx</a>
+◈ ʜᴇʟᴘʟɪɴᴇ : <a href='https://t.me/EternalsHelplineBot'>ʜᴇʟᴘʟɪɴᴇ</a></b></blockquote>"""
+    
     
     ADMIN_PANEL = """≡ <b>Aᴅᴍɪɴ ᴘᴀɴᴇʟ</b>
 
