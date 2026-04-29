@@ -291,11 +291,11 @@ class cantarellatvDownloader:
         final_ep_num = ep_num_override if ep_num_override else ep_num
 
         # Audio status
-        audio = "JP"
+        audio = "SUB"
         if all_data.get('sub') and all_data.get('dub'):
-             audio = "Dual Audio"
+             audio = "DUAL"
         elif all_data.get('dub'):
-             audio = "EN"
+             audio = "ENG"
 
         qual_str = quality if quality in ["360", "720", "1080"] else "auto"
 
