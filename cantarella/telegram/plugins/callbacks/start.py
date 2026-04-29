@@ -18,21 +18,27 @@ from cantarella.core.database import db
 @Client.on_callback_query(filters.regex("^start$"))
 async def cb_start(client: Client, callback_query):
     buttons = []
+
+    # Top button (always visible)
+    buttons.append([
+        InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/AnimeNexusNetwork/158")
+    ])
+
     is_admin = await db.is_admin(callback_query.from_user.id)
+
     if is_admin or callback_query.from_user.id == OWNER_ID:
         buttons.append([
             InlineKeyboardButton("⚙️ ᴀᴅᴍɪɴ ᴘᴀɴᴇʟ", callback_data="admin_panel"),
             InlineKeyboardButton("🔄 ᴏɴɢᴏɪɴɢ", callback_data="toggle_ongoing")
         ])
 
-    if is_admin or callback_query.from_user.id == OWNER_ID:
         buttons.append([
             InlineKeyboardButton("❤ ғᴀᴠᴏʀɪᴛᴇꜱ", callback_data="favorites")
         ])
 
     buttons.append([
         InlineKeyboardButton("✦ ᴀʙᴏᴜᴛ", callback_data="about"),
-        InlineKeyboardButton("ʜᴇʟᴘ ✦",  callback_data="help")
+        InlineKeyboardButton("ʜᴇʟᴘ ✦", callback_data="help")
     ])
 
     inline_buttons = InlineKeyboardMarkup(buttons)
