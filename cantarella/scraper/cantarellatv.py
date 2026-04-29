@@ -307,7 +307,7 @@ class cantarellatvDownloader:
         try:
             from config import FORMAT
         except ImportError:
-            FORMAT = "[S{season}-E{episode}] {title} [{quality}] [{audio}]"
+            FORMAT = "[S{season} E{episode}] {title} [{quality}] [{audio}]"
 
         base_filename_str = FORMAT.format(
             season=final_season,
