@@ -197,51 +197,47 @@ async def handle_start(client: Client, message):
         except Exception:
             pass
 
-# Record user
-await db.add_user(message.from_user.id)
+    # Record user
+    await db.add_user(message.from_user.id)
 
-buttons = []
-is_admin = await db.is_admin(message.from_user.id)
+    buttons = []
+    is_admin = await db.is_admin(message.from_user.id)
+    if is_admin or message.from_user.id == OWNER_ID:
+        buttons.append([
+            InlineKeyboardButton("ᴀᴅᴍɪɴ ᴘᴀɴᴇʟ", callback_data="admin_panel"),
+            InlineKeyboardButton("ᴛᴏɢɢʟᴇ ᴏɴɢᴏɪɴɢ", callback_data="toggle_ongoing")
+        ])
+        buttons.append([
+            InlineKeyboardButton("❤ ғᴀᴠᴏʀɪᴛᴇꜱ", callback_data="favorites")
+        ])
 
-# Top row
-buttons.append([
-    InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/AnimeNexusNetwork/158")
-])
-
-# Admin buttons only if admin
-if is_admin or message.from_user.id == OWNER_ID:
+    # Top row
     buttons.append([
-        InlineKeyboardButton("ᴀᴅᴍɪɴ ᴘᴀɴᴇʟ", callback_data="admin_panel"),
-        InlineKeyboardButton("ᴛᴏɢɢʟᴇ ᴏɴɢᴏɪɴɢ", callback_data="toggle_ongoing")
+        InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/AnimeNexusNetwork/158")
     ])
 
-buttons.append([
-    InlineKeyboardButton("ғᴀᴠᴏʀɪᴛᴇꜱ", callback_data="favorites")
-])
+    buttons.append([
+        InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data="about"),
+        InlineKeyboardButton("Hᴇʟᴘ •", callback_data="help")
+    ])
 
-buttons.append([
-    InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data="about"),
-    InlineKeyboardButton("ʜᴇʟᴘ •", callback_data="help")
-])
+    inline_buttons = InlineKeyboardMarkup(buttons)
 
-inline_buttons = InlineKeyboardMarkup(buttons)
-
-# ✅ FIXED INDENTATION
-try:
-    await message.reply_photo(
-        photo=START_PIC,
-        caption=Dead.START_MSG.format(
-            first=message.from_user.first_name,
-            last=message.from_user.last_name or "",
-            username="@" + message.from_user.username if message.from_user.username else None,
-            mention=message.from_user.mention,
-            id=message.from_user.id
-        ),
-        reply_markup=inline_buttons
-    )
-except Exception as e:
-    logger.error(f"Error in start_command: {e}")
-    await message.reply_text("An error occurred while processing your request.")
+    try:
+        await message.reply_photo(
+            photo=START_PIC,
+            caption=Dead.START_MSG.format(
+                first=message.from_user.first_name,
+                last=message.from_user.last_name or "",
+                username="@" + message.from_user.username if message.from_user.username else None,
+                mention=message.from_user.mention,
+                id=message.from_user.id
+            ),
+            reply_markup=inline_buttons
+        )
+    except Exception as e:
+        logger.error(f"Error in start_command: {e}")
+        await message.reply_text("An error occurred while processing your request.")
     
 @Client.on_message(filters.private & filters.command("favorites") & admin)
 @check_ban
